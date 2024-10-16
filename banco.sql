@@ -1,0 +1,11 @@
+DROP DATABASE tarefas;
+CREATE DATABASE tarefas;
+USE tarefas;
+
+CREATE TABLE tarefas (
+    id INTEGER PRIMARY KEY AUTO_IMCREMENT,
+    nome VARCHAR (255) NOT NULL,
+    titulo VARCHAR (255) NOT NULL,
+    descricao VARCHAR (255) NOT NULL,
+    data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
